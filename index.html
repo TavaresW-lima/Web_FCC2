@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- o doctype informa ao agente de usuário qual a versão do html a ser renderizada -->
+<html lang="pt-br">
+<head>
+	<title>William Tavares's Survey Form</title>
+	<meta charset="utf-8">
+	<meta name="author" content="William Tavares">
+	<meta name="description" content="Página que atende a estrutura Básica">
+	<meta name="keywords" content="html, estudo, tecnologia">
+    <link rel=stylesheet href="css/stylesheet.css">
+</head>
+<body>
+    <div class="corFundo">
+    <div id="main">
+        <h1 id="title">William Tavares's Survey Form</h1>
+        <p id="description">Well this is a survey form afterall</p>
+        <div class="form_wrapper">
+            <form id="survey-form">
+                <label id="name-label" for="name">Name:<input class="form-element type-input" type="text" id="name" name="name" placeholder="Enter your name"></label>
+                <label id="email-label" for="email">E-mail:<input class="form-element type-input" type="email" name="email" placeholder="Enter your e-mail"></label>
+                <label id="tel-label"  for="tel">Tel:<input class="form-element type-input" type="tel" name="tel" placeholder="Enter your phone number"></label>
+                <label id="age-label" for="age">Age:<input class="form-element type-input"  type="number" name="age" id="number" min="14" max="100" placeholder="Enter your age"></label>
+                <label id="adress-label" for="adress">Adress:<input class="form-element type-input" type="text" name="adress" id="adress" placeholder="Enter your adress"></label>            
+                
+                <label id="dropdown-label" for="Interest">
+                    Rate your interest in answering this form:
+                <select class="form-element" id="dropdown" name="Interest">
+                    <option disabled selected value>Select an option</option>
+                    <option value="Very_Interested">Very Interested</option>
+                    <option value="Interested">Interested</option>
+                    <option value="Not_interested">Meh...</option>
+                    <option value="Very_not_interested">Can i pass?</option>
+                </select>
+                </label>
+                <label id="radio-group-label">Would you share this exciting form with your friends?</label>
+                <div id="radio-group">
+                    <label>
+                        <input class="form-element radio-button" type="radio" name="sharing" value="1">                        Of Course i will!
+                        Of Course i will!
+                    </label>
+                    <label>
+                        <input class="form-element radio-button" type="radio" name="sharing" value="2">                   
+                        Not so sure
+                    </label>
+                    <label>
+                        <input class="form-element radio-button" type="radio" name="sharing" value="3">
+                        What? Why?
+                    </label>
+                </div>
+                <label id="ckbx-group-label">What do you expect from this awesome form?<span>(check all that aplly)</span></label>
+                <div id="ckbx-group">
+                    <label>
+                        <input class="form-element checkbox-button" type="checkbox" name="expectantion" value="1">
+                        Annoyance
+                    </label>
+                    <label>
+                        <input class="form-element checkbox-button" type="checkbox" name="expectantion" value="2">
+                        Sadness
+                    </label>
+                    <label>
+                        <input class="form-element checkbox-button" type="checkbox" name="expectantion" value="3">                        
+                        Angryness
+                    </label>
+                    <label>
+                        <input class="form-element checkbox-button" type="checkbox" name="expectantion" value="4">                        
+                        All the above twice
+                    </label>  
+                </div>
+                <label id="textarea-label" for="comments">
+                    Any comments or suggestions? Feel free to tell us below
+                    <textarea class="form-element comments" id="additional" placeholder="Please type any additional comments here..."></textarea>
+                </label>
+                <button type="submit" id="submit" class="form-element submit-button">Submit</button>
+            </form>
+        
+        
+        
+        </div>    
+    
+    </div>
+</div>
+	
+</body>
+</html>
